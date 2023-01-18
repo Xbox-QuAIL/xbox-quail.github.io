@@ -1,7 +1,7 @@
 ---
-title: "Sanders Lab - Code"
+title: "QuAIL - Code"
 layout: textlay
-excerpt: "Sanders Lab -- Code."
+excerpt: "QuAIL -- Code."
 sitemap: false
 permalink: /code/
 ---
@@ -11,7 +11,9 @@ permalink: /code/
 
 ---
 
-## [PsychCore Genomics Pipeline](https://github.com/sanderslab/psychcore-compute-platform)
+Open source code from our work to be found on QuAIL <a href="https://github.com/Xbox-QuAIL"><i class='fab fa-github'></i> GitHub</a>.
+
+<!-- ## [PsychCore Genomics Pipeline](https://github.com/sanderslab/psychcore-compute-platform)
 
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/codepic/WGS_Pipeline_Image.png" style="width: 300px"> 
@@ -93,7 +95,7 @@ CNVision was written to analyze data for the Simons Simplex Collection autism da
 This perl script will install a series of directories and clues that teaches basic UNIX command line skills including `cd`, `ls`, `grep`, `less`, `head`, `tail`, and `nano`. Run the perl script from the command line on a UNIX based machine (e.g. Mac or Linux) using the command: `perl treasureHunt_v2.pl`. Then use `ls` to find the first clue. A PDF of command line commands is also available to download.
 
 - <a href="https://www.dropbox.com/s/4pnobo1vk1sqvjb/treasureHunt_v2.pl?dl=0"><i class='fa fa-link'></i> Source</a>
-- <a href="https://www.dropbox.com/s/xw5c1ra4td9k966/Unix_basics.pdf?dl=0"><i class='fa fa-book'></i> Manual</a>
+- <a href="https://www.dropbox.com/s/xw5c1ra4td9k966/Unix_basics.pdf?dl=0"><i class='fa fa-book'></i> Manual</a> -->
 
 ---
 

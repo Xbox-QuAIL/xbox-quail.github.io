@@ -1,7 +1,7 @@
 ---
-title: "Sanders Lab - News"
+title: "QuAIL - News"
 layout: textlay
-excerpt: "Sanders Lab at UCSF."
+excerpt: "QuAIL at UCSF."
 sitemap: false
 permalink: /allnews.html
 ---

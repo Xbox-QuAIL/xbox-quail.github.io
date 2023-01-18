@@ -1,7 +1,7 @@
 ---
-title: "Sanders Lab - Team"
+title: "QuAIL - Team"
 layout: gridlay
-excerpt: "Sanders Lab: Team members"
+excerpt: "QuAIL: Team members"
 sitemap: false
 permalink: /team/
 ---
@@ -12,7 +12,7 @@ permalink: /team/
 
 ---
 
-## Principal Investigator
+## Managerial Board
 {% assign number_printed = 0 %}
 {% for member in site.data.team_members %}
 
@@ -45,7 +45,7 @@ permalink: /team/
 
 ---
 
-## Trainee
+<!-- ## Trainee
 {% assign number_printed = 0 %}
 {% for member in site.data.team_members %}
 
@@ -74,11 +74,11 @@ permalink: /team/
 {% assign even_odd = number_printed | modulo: 2 %}
 {% if even_odd == 1 %}
 </div>
-{% endif %}
+{% endif %} -->
 
 ---
 
-## Staff
+## Research Staff
 {% assign number_printed = 0 %}
 {% for member in site.data.team_members %}
 
@@ -111,7 +111,7 @@ permalink: /team/
 
 ---
 
-## PsychCore Genomics Core
+## Engineering Staff
 {% assign number_printed = 0 %}
 {% for member in site.data.team_members %}
 
@@ -144,7 +144,7 @@ permalink: /team/
 
 ---
 
-## Visiting Scholars
+<!-- ## Visiting Scholars
 {% assign number_printed = 0 %}
 {% for member in site.data.team_members %}
 
@@ -173,11 +173,11 @@ permalink: /team/
 {% assign even_odd = number_printed | modulo: 2 %}
 {% if even_odd == 1 %}
 </div>
-{% endif %}
+{% endif %} -->
 
 ---
 
-## Alumni
+<!-- ## Alumni
 
 {% for member in site.data.team_members %}
 {% if member.group == 8 %}
@@ -189,12 +189,12 @@ permalink: /team/
 {% endif %}
 
 {% endif %}
-{% endfor %}
+{% endfor %} -->
 
 ---
 
 ## Administrative Support
-Please contact our lab manager, <a href="mailto:Clif.Duhn@ucsf.edu">Clif Duhn</a>.
+Please contact our lab manager, <a href="mailto:XGSQAI@microsoft.com">Adrian Brown</a>.
 
 
 

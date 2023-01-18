@@ -1,7 +1,7 @@
 ---
-title: "Sanders Lab - Data"
+title: "QuAIL - Data"
 layout: textlay
-excerpt: "Sanders Lab -- Data."
+excerpt: "QuAIL -- Data."
 sitemap: false
 permalink: /data/
 ---
@@ -10,7 +10,9 @@ permalink: /data/
 
 ---
 
-## Automated 3D Refinement of the Allen Developing Mouse Brain Atlas
+Datasets to be released soon!
+
+<!-- ## Automated 3D Refinement of the Allen Developing Mouse Brain Atlas
 
 <div class="youtube center"><h4>Original</h4>
 </div>
@@ -115,4 +117,4 @@ permalink: /data/
 <iframe width="404" height="790" src="https://player.vimeo.com/video/402060979?autoplay=1&muted=1" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 </div>
 
-<div class="clear"></div>
+<div class="clear"></div> -->

@@ -1,7 +1,7 @@
 ---
-title: "Sanders Lab - Research"
+title: "QuAIL - Research"
 layout: textlay
-excerpt: "Sanders Lab -- Research"
+excerpt: "QuAIL -- Research"
 sitemap: false
 permalink: /research/
 ---
@@ -19,7 +19,7 @@ Exome sequencing has revolutionized our ability to find the genes associated wit
 ---- 
 
 
-![]({{ site.url }}{{ site.baseurl }}/images/respic/scn2aMut.png){: style="width: 300px; float: left;margin-right: 30px; border: 10px"}
+<!-- ![]({{ site.url }}{{ site.baseurl }}/images/respic/scn2aMut.png){: style="width: 300px; float: left;margin-right: 30px; border: 10px"}
 
 ## Understanding the role of ASD genes
 <div style="text-align: justify">
@@ -37,6 +37,6 @@ The second approach has focused mainly on the gene SCN2A and is performed in col
 <div style="text-align: justify">
 My early publications describe the development of a novel approach to detecting de novo CNVs in Illumina SNP genotyping data and applying this to Autism Spectrum Disorder (ASD) families from the Simons Simplex Collection (SSC). While de novo CNVs had previously been associated with ASD (Sebat et al. 2007), our analysis of this cohort of 1,124 families, including unaffected siblings, allowed us to clarify the genomic architecture. In turn, this allowed us to develop a statistical approach to evaluating whether specific genomic loci are associated with ASD; four de novo duplications at 7q11.23 met these criteria for ASD association with reduced sociability and, notably, deletions at the same locus are associated with increased social behavior in William’s Syndrome. We have recently (2015) published a CNV analysis of all 2,591 families in the SSC. By integrating CNV and exome data we showed that small de novo deletions contain one critical ASD gene, while large de novo CNVs contain multiple ASD risk genes. We use this finding to identify six ASD risk CNV loci and 65 ASD risk genes. I led the analysis and write up of both projects including the development of novel approaches to CNV detection. Autism Speaks cited our 2011 CNV analysis as one of the top Ten Autism Research Achievements. 
 </div>
----
+--- -->
 
 
