@@ -43,9 +43,9 @@ permalink: /team/
 </div>
 {% endif %}
 
+<!-- 
 ---
-
-<!-- ## Trainee
+## Trainee
 {% assign number_printed = 0 %}
 {% for member in site.data.team_members %}
 
