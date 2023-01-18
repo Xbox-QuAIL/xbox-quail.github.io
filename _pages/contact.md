@@ -8,6 +8,8 @@ permalink: /contact/
 
 # Contact
 
+Email us at: XGSQAI@microsoft.com
+
 ## Lab Location
 
 QuAIL is located in RTC6 building, Microsoft Redmond Town Center campus ([Google Map](https://goo.gl/maps/U2wFqeWM2WmNAzek9)):

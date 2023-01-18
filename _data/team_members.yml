@@ -1,5 +1,5 @@
 - name: Jimmy Bischoff
-  photo: jbischoff.jpg
+  photo: jimmybischoff.jpg
   info: Director of XBOX Studios Quality 
   url: jimmybischoff
   group: 0
@@ -14,19 +14,19 @@
   photo: sherifgad.png
   info: Senior Applied Research Scientist
   url: sherifgad
-  group: 1
+  group: 2
 
 - name: Wei Huang
   photo: bio-photo.jpg
   info: Applied Research Scientist II
   url: weihaung
-  group: 1
+  group: 2
 
 - name: Farrukh Rahman
   photo: farrukhrahman.jpg
   info: Applied Research Scientist II
   url: farrukhrahman
-  group: 1
+  group: 2
 
 - name: Beau Yotka
   photo: beauyotka.jpg
