@@ -3,7 +3,7 @@ title: "QuAIL - Research"
 layout: textlay
 excerpt: "QuAIL -- Research"
 sitemap: false
-permalink: /research/
+permalink: /blogs/
 ---
 
 # Research Highlights
@@ -16,6 +16,7 @@ permalink: /research/
 <div style="text-align: justify">
 We designed and evlauated AI agents that can effectively explore and inspect open-world games following human preference in exploration and bug testing while only using raw RGB pixel input.
 </div>
+<h4><a href="blog_template/test_blog.md" class="off">Read More</a></h4>
 ---- 
 
 
