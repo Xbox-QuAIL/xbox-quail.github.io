@@ -3,9 +3,6 @@
   type="text/javascript">
 </script>
 
----
-layout: textlay
----
 
 ## Gene discovery in autism spectrum disorder and other developmental disorders
 <div style="text-align: justify">
