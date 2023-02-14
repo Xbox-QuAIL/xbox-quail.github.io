@@ -32,20 +32,20 @@ In Eq. $\eqref{eq:test1}$ you can see
 
 The following are tables
 
-<script type="text/markdown">
+
 
 Food    | Description                           | Category | Sample type
 ------- | ------------------------------------- | -------- | -----------
+
 Apples  | A small, somewhat round ...           | Fruit    | Fuji
 Bananas | A long and curved, often-yellow ...   | Fruit    | Snow
 Kiwis   | A small, hairy-skinned sweet ...      | Fruit    | Golden
 Oranges | A spherical, orange-colored sweet ... | Fruit    | Navel
 
-</script>
-
 
 
 | Left-Aligned  | Center Aligned  | Right Aligned |
+
 | :------------ |:---------------:| -----:|
 | col 3 is      | some wordy text | $1600 |
 | col 2 is      | centered        |   $12 |
