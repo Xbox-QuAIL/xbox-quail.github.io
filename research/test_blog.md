@@ -32,5 +32,5 @@ The following is a table example
 
 | First Header  | Second Header |
 | :------------- | -------------: |
-| Declares a variable, optionally initializing it to a value. | Content Cell  |
-| Content Cell  | Declares a variable, optionally initializing it to a value.  |
+| Content Cell Content Cell | Content Cell Content Cell |
+| Content Cell Content Cell  | Content Cell Content Cell  |
