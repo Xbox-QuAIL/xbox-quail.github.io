@@ -9,7 +9,7 @@ Exome sequencing has revolutionized our ability to find the genes associated wit
 
 ![]({{ site.url }}{{ site.baseurl }}/images/respic/shooter_env.png){: style="width: 300px; float: left;margin-right: 30px; border: 10px"}
 
-This is an inline equation: $$V_{sphere} = \frac{4}{3}\pi r^3$$,<br>
+This is an inline equation: $`V_{sphere} = \frac{4}{3}\pi r^3`$,<br>
 followed by a display style equation:
 
 $$V_{sphere} = \frac{4}{3}\pi r^3$$
