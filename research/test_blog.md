@@ -30,22 +30,10 @@ $$
 
 In Eq. $\eqref{eq:test1}$ you can see
 
-The following are tables
+The following is a table example
 
 
-
-Food    | Description                           | Category | Sample type
-
-------- | ------------------------------------- | -------- | -----------
-Apples  | A small, somewhat round ...           | Fruit    | Fuji
-Bananas | A long and curved, often-yellow ...   | Fruit    | Snow
-Kiwis   | A small, hairy-skinned sweet ...      | Fruit    | Golden
-Oranges | A spherical, orange-colored sweet ... | Fruit    | Navel
-
-
-
-| Left-Aligned  | Center Aligned  | Right Aligned |
-| :------------ |:---------------:| -----:|
-| col 3 is      | some wordy text | $1600 |
-| col 2 is      | centered        |   $12 |
-| zebra stripes | are neat        |    $1 |
+| First Header  | Second Header |
+| :------------- | -------------: |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
