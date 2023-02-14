@@ -14,7 +14,7 @@ Exome sequencing has revolutionized our ability to find the genes associated wit
 
 ![]({{ site.url }}{{ site.baseurl }}/images/respic/shooter_env.png){: style="width: 300px; float: left;margin-right: 30px; border: 10px"}
 
-This is an inline equation: $`V_{sphere} = \frac{4}{3}\pi r^3`$,<br>
+This is an inline equation: $$V_{sphere} = \frac{4}{3}\pi r^3$$,<br>
 followed by a display style equation:
 
 $$V_{sphere} = \frac{4}{3}\pi r^3$$
@@ -32,10 +32,18 @@ In Eq. $\eqref{eq:test1}$ you can see
 
 The following are tables
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+<div class="datatable-begin"></div>
+
+Food    | Description                           | Category | Sample type
+------- | ------------------------------------- | -------- | -----------
+Apples  | A small, somewhat round ...           | Fruit    | Fuji
+Bananas | A long and curved, often-yellow ...   | Fruit    | Snow
+Kiwis   | A small, hairy-skinned sweet ...      | Fruit    | Golden
+Oranges | A spherical, orange-colored sweet ... | Fruit    | Navel
+
+<div class="datatable-end"></div>
+
+
 
 | Left-Aligned  | Center Aligned  | Right Aligned |
 | :------------ |:---------------:| -----:|
