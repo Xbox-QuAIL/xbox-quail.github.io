@@ -16,7 +16,7 @@ permalink: /research/
 <div style="text-align: justify">
 We designed and evlauated AI agents that can effectively explore and inspect open-world games following human preference in exploration and bug testing while only using raw RGB pixel input.
 </div>
-<h4><a href="blog_template/test_blog.md" class="off">Read More</a></h4>
+<h4><a href="test_blog" class="off">Read More</a></h4>
 ---- 
 
 
