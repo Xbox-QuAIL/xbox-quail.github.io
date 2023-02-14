@@ -3,7 +3,7 @@ title: "QuAIL - Research"
 layout: textlay
 excerpt: "QuAIL -- Research"
 sitemap: false
-permalink: /blogs/
+permalink: /research/
 ---
 
 # Research Highlights
