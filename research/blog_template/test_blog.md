@@ -3,7 +3,7 @@ title: "QuAIL - Research: Test Blog Post"
 layout: textlay
 excerpt: "QuAIL -- Research"
 sitemap: false
-permalink: /research/blog_template/test_blog/
+permalink:
 ---
 
 ## Gene discovery in autism spectrum disorder and other developmental disorders
