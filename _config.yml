@@ -20,7 +20,7 @@ sass:
   sass_dir: _sass
 
 # Conversion
-markdown: GFM #kramdown
+markdown: kramdown
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
