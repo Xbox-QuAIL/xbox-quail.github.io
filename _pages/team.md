@@ -111,7 +111,7 @@ permalink: /team/
 
 ---
 
-## Engineering Staff
+<!-- ## Engineering Staff
 {% assign number_printed = 0 %}
 {% for member in site.data.team_members %}
 
@@ -142,7 +142,7 @@ permalink: /team/
 </div>
 {% endif %}
 
----
+--- -->
 
 <!-- ## Visiting Scholars
 {% assign number_printed = 0 %}
@@ -175,7 +175,7 @@ permalink: /team/
 </div>
 {% endif %} -->
 
----
+<!-- --- -->
 
 <!-- ## Alumni
 
@@ -191,7 +191,7 @@ permalink: /team/
 {% endif %}
 {% endfor %} -->
 
----
+<!-- --- -->
 
 ## Administrative Support
 Please contact our lab manager, <a href="mailto:XGSQAI@microsoft.com">Adrian Brown</a>.

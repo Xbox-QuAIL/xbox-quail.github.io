@@ -1,9 +1,4 @@
-- name: Jimmy Bischoff
-  photo: jimmybischoff.jpg
-  info: Director of XBOX Studios Quality 
-  url: jimmybischoff
-  group: 0
-  
+ 
 - name: Adrian Brown
   photo: adrianbrown.jpg
   info: QuAIL Manager - Principal Manager
@@ -17,7 +12,7 @@
   group: 2
 
 - name: Wei Huang
-  photo: bio-photo.jpg
+  photo: weihuang.jpg
   info: Applied Research Scientist II
   url: weihaung
   group: 2
