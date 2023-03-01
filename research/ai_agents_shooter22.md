@@ -1,6 +1,5 @@
-## Open-world Game Exploration and Testing Using AI Agents
 
-![]({{ site.url }}{{ site.baseurl }}/images/respic/aiagent_demo22/banner.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
+![]({{ site.url }}{{ site.baseurl }}/images/respic/aiagent_demo22/banner.png){: style="width: 1000px; float: center;"}
 
 ### Overview
 <div style="text-align: justify">
@@ -12,7 +11,9 @@ Over the last decade, some automation attempts aimed at addressing this dilemma,
 AI agents that can learn from interaction with the environment and demonstrations by humans provide a practical toolkit that can scale across different games with minimum dependencies on specific scenarios. Reinforcement learning (RL) ([2](https://lilianweng.github.io/posts/2018-02-19-rl-overview/)) is one of the most utilized learning paradigms for training AI agents in a closed-loop control workflow involving sensing the environment's state, taking the best action based on agent's experience, and incurring a reward signal indicating how good was the action taken from a task perspective. RL methods have achieved many breakthroughs in playing games with human-level performance ([3](https://ai.googleblog.com/2015/02/from-pixels-to-actions-human-level.html?m=1/))([4](https://www.deepmind.com/blog/agent57-outperforming-the-human-atari-benchmark)).
 </div>
 
+<center>
 ![]({{ site.url }}{{ site.baseurl }}/images/respic/aiagent_demo22/RL_intro.png){: style="width: 400px; float: center;margin-right: 30px; border: 10px"}
+</center>
 
 ### Motivation
 <div style="text-align: justify">
@@ -37,7 +38,9 @@ To address these limitations, we developed a novel agent design that only depend
 We aimed to design a game scenario that resembles the complexity of real open-world AAA games. Our demo game mimics a large city park (e.g., New York Hyde Park) with a total playable are of 8.6 square kilometers, including trails, green spaces, lakes, bridges, and service buildings like cafeterias and toilets. Along the trials, there are objects to be inspected for bugs such as clipping or texture. Yet, not all objects are of interest to test. The agent's task is to explore such an open-world environment, find objects of interest, and perform bug testing on them similarly to human tester demonstrations.
 </div>
 
- ![]({{ site.url }}{{ site.baseurl }}/images/respic/aiagent_demo22/shooter_env.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
+<center>
+ ![]({{ site.url }}{{ site.baseurl }}/images/respic/aiagent_demo22/shooter_env.png){: style="width: 300px; float: center;margin-right: 30px; border: 10px"}
+</center>
 
 ### Methodology
 
