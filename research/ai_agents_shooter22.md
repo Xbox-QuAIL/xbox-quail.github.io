@@ -1,6 +1,6 @@
 ![]({{ site.url }}{{ site.baseurl }}/images/respic/aiagent_demo22/banner.png){: style="width: 1000px; float: center;"}
 
-### By Sherif Gad | Senior Applied Research Scientist
+##### By Sherif Gad | Senior Applied Research Scientist
 
 
 ### Overview
