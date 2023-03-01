@@ -1,3 +1,4 @@
+## Open-world Game Exploration and Inspection Using AI agents
 
 ![]({{ site.url }}{{ site.baseurl }}/images/respic/aiagent_demo22/banner.png){: style="width: 1000px; float: center;"}
 
@@ -32,13 +33,29 @@ To address these limitations, we developed a novel agent design that only depend
 
 ### Game Environment
 
+ ![]({{ site.url }}{{ site.baseurl }}/images/respic/aiagent_demo22/shooter_env.png){: style="width: 300px; float: center;margin-right: 30px; border: 10px"}
+
 <div style="text-align: justify">
 We aimed to design a game scenario that resembles the complexity of real open-world AAA games. Our demo game mimics a large city park (e.g., New York Hyde Park) with a total playable are of 8.6 square kilometers, including trails, green spaces, lakes, bridges, and service buildings like cafeterias and toilets. Along the trials, there are objects to be inspected for bugs such as clipping or texture. Yet, not all objects are of interest to test. The agent's task is to explore such an open-world environment, find objects of interest, and perform bug testing on them similarly to human tester demonstrations.
 </div>
 
- ![]({{ site.url }}{{ site.baseurl }}/images/respic/aiagent_demo22/shooter_env.png){: style="width: 300px; float: center;margin-right: 30px; border: 10px"}
+ ![]({{ site.url }}{{ site.baseurl }}/images/respic/aiagent_demo22/task_objectives.png){: style="width: 300px; float: center;margin-right: 30px; border: 10px"}
 
 ### Methodology
+
+<div style="text-align: justify">
+
+We extend the Inspector agent framework ([5](https://ieeexplore.ieee.org/abstract/document/9893630)) to implement our AI agent. The Inspector agent consists of three main building blocks, including:
+
+<ul>
+<li> An object detector model to detect objects of interest (OOIs) during game exploration.</li>
+<li> An imitation learning policy to execute bug testing based human tester demonstration datasets.</li>
+<li> An exploration policy for exploring the environment guided by curiosity rewards</li>
+</ul>
+
+</div>
+
+ ![]({{ site.url }}{{ site.baseurl }}/images/respic/aiagent_demo22/inspector_agent.png){: style="width: 400px; float: center;margin-right: 30px; border: 10px"}
 
 ### Experimental Setup
 
