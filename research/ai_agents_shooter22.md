@@ -1,4 +1,4 @@
-## Open-world Game Exploration and Inspection Using AI agents
+### Open-world Game Exploration and Inspection Using AI agents
 
 ![]({{ site.url }}{{ site.baseurl }}/images/respic/aiagent_demo22/banner.png){: style="width: 1000px; float: center;"}
 
