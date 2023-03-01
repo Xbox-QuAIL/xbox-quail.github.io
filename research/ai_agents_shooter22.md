@@ -1,4 +1,4 @@
-![]({{ site.url }}{{ site.baseurl }}/images/respic/aiagent_demo22/banner.png){: style="width: 1000px; float: center;"}
+![]({{ site.url }}{{ site.baseurl }}/images/respic/aiagent_demo22/banner.png){: style="width: 850px; float: center;"}
 
 ##### By Sherif Gad | Senior Applied Research Scientist
 
