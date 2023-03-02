@@ -1,4 +1,4 @@
-![]({{ site.url }}{{ site.baseurl }}/images/respic/aiagent_demo22/banner.png){: style="width: 850px; float: center;"}
+![]({{ site.url }}{{ site.baseurl }}/images/respic/aiagent_demo22/banner.png){: style="width: 850px; height:200px; float: center;"}
 
 ##### By Sherif Gad | Senior Applied Research Scientist
 
@@ -13,7 +13,9 @@ Over the last decade, some automation attempts aimed at addressing this dilemma,
 AI agents that can learn from interaction with the environment and demonstrations by humans provide a practical toolkit that can scale across different games with minimum dependencies on specific scenarios. Reinforcement learning (RL) ([2](https://lilianweng.github.io/posts/2018-02-19-rl-overview/)) is one of the most utilized learning paradigms for training AI agents in a closed-loop control workflow involving sensing the environment's state, taking the best action based on agent's experience, and incurring a reward signal indicating how good was the action taken from a task perspective. RL methods have achieved many breakthroughs in playing games with human-level performance ([3](https://ai.googleblog.com/2015/02/from-pixels-to-actions-human-level.html?m=1/))([4](https://www.deepmind.com/blog/agent57-outperforming-the-human-atari-benchmark)).
 </div>
 
+<p align="center">
 ![]({{ site.url }}{{ site.baseurl }}/images/respic/aiagent_demo22/RL_intro.png){: style="width: 400px; float: center;margin-right: 30px; border: 10px"}
+</p>
 
 ### Motivation
 <div style="text-align: justify">
