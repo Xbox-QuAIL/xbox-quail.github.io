@@ -1,5 +1,6 @@
-![]({{ site.url }}{{ site.baseurl }}/images/respic/aiagent_demo22/banner.png){: style="width: 950px; height:200px; float: center;"}
+![]({{ site.url }}{{ site.baseurl }}/images/respic/aiagent_demo22/banner.png){: style="width: 1000px; height:300px; float: center;"}
 
+### AI Agents for OPen-world Game Exploration and Testing 
 ##### By Sherif Gad | Senior Applied Research Scientist
 
 
