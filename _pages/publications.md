@@ -11,8 +11,6 @@ permalink: /publications/
 
 ---
 
-## Featured
-
 {% assign number_printed = 0 %}
 {% for publi in site.data.publist %}
 
@@ -25,7 +23,7 @@ permalink: /publications/
 
 <div class="col-sm-6 clearfix">
  <div class="row">
- 	<img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="30%" style="float: right" />
+ 	<img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="40%" style="float: right" />
   <p><a class="pub1" href="{{ publi.link.url }}">{{ publi.title }}</a></p>
   <a class="pub2"> {{ publi.link.display }} </a>
  </div>

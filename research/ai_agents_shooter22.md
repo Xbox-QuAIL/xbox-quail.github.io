@@ -1,4 +1,4 @@
-![]({{ site.url }}{{ site.baseurl }}/images/respic/aiagent_demo22/banner.png){: style="width: 850px; height:200px; float: center;"}
+![]({{ site.url }}{{ site.baseurl }}/images/respic/aiagent_demo22/banner.png){: style="width: 950px; height:200px; float: center;"}
 
 ##### By Sherif Gad | Senior Applied Research Scientist
 
@@ -14,7 +14,7 @@ AI agents that can learn from interaction with the environment and demonstration
 </div>
 
 <p align="center">
-![]({{ site.url }}{{ site.baseurl }}/images/respic/aiagent_demo22/RL_intro.png){: style="width: 400px; float: center;margin-right: 30px; border: 10px"}
+![]({{ site.url }}{{ site.baseurl }}/images/respic/aiagent_demo22/RL_intro.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
 </p>
 
 ### Motivation
@@ -36,13 +36,17 @@ To address these limitations, we developed a novel agent design that only depend
 
 ### Game Environment
 
- ![]({{ site.url }}{{ site.baseurl }}/images/respic/aiagent_demo22/shooter_env.png){: style="width: 300px; float: center;margin-right: 30px; border: 10px"}
+<p align="center">
+ ![]({{ site.url }}{{ site.baseurl }}/images/respic/aiagent_demo22/shooter_env.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
+</p>
 
 <div style="text-align: justify">
 We aimed to design a game scenario that resembles the complexity of real open-world AAA games. Our demo game mimics a large city park (e.g., New York Hyde Park) with a total playable are of 8.6 square kilometers, including trails, green spaces, lakes, bridges, and service buildings like cafeterias and toilets. Along the trials, there are objects to be inspected for bugs such as clipping or texture. Yet, not all objects are of interest to test. The agent's task is to explore such an open-world environment, find objects of interest, and perform bug testing on them similarly to human tester demonstrations.
 </div>
 
- ![]({{ site.url }}{{ site.baseurl }}/images/respic/aiagent_demo22/task_objectives.png){: style="width: 300px; float: center;margin-right: 30px; border: 10px"}
+<p align="center">
+ ![]({{ site.url }}{{ site.baseurl }}/images/respic/aiagent_demo22/task_objectives.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
+</p>
 
 ### Methodology
 
@@ -58,7 +62,9 @@ We extend the Inspector agent framework ([5](https://ieeexplore.ieee.org/abstrac
 
 </div>
 
- ![]({{ site.url }}{{ site.baseurl }}/images/respic/aiagent_demo22/inspector_agent.png){: style="width: 400px; float: center;margin-right: 30px; border: 10px"}
+<p align="center">
+ ![]({{ site.url }}{{ site.baseurl }}/images/respic/aiagent_demo22/inspector_agent.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
+</p>
 
 ### Experimental Setup
 
