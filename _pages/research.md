@@ -31,9 +31,9 @@ We designed and evlauated AI agents that can effectively explore and inspect ope
 
 <div class="col-sm-6 clearfix">
  <div class="row">
- 	<img src="{{ site.url }}{{ site.baseurl }}/images/respic/{{ blog.image }}" class="img-responsive" width="30%" style="float: right" />
+ 	<img src="{{ site.url }}{{ site.baseurl }}/images/respic/{{ blog.image }}" class="img-responsive" width="60%" style="float: right" />
   <p><a class="pub1" href="{{ blog.link.url }}">{{ blog.title }}</a></p>
-  <a class="pub2"> {{ blog.link.display }} </a>
+  <p> {{ blog.description }} </p>
  </div>
 </div>
 
