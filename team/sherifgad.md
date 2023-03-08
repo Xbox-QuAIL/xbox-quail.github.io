@@ -4,10 +4,10 @@ title: Sherif Gad
 position: Senior Applied Research Scientist
 handle: sherifgad
 email: 
-linkedin: https://www.linkedin.com/in/sherif-gad-phd-6563a120/
+linkedin: sherif-gad-phd-6563a120/
 github:
 scholar: 3_2eKvYAAAAJ
-photo: sherifgad.jpg
+photo: sherifgad.png
 ucsf: brooke.sheppard
 ---
 
