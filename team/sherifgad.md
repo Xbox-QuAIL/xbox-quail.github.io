@@ -8,7 +8,6 @@ linkedin: sherif-gad-phd-6563a120/
 github:
 scholar: 3_2eKvYAAAAJ
 photo: sherifgad.png
-ucsf: brooke.sheppard
 ---
 
 ### Overview
@@ -17,5 +16,3 @@ Sherif is working on deep reinforcement learning research for designing game exp
 
 ### Education
  - Ph.D., Computer Science, University of New South Wales, Australia
- - M.Sc., Computer Science, Helwan University, Egypt
- - B.Sc., Computer Science, Helwan University, Egypt
