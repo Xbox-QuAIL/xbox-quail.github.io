@@ -35,6 +35,22 @@ Usually, AI agents for game testing maximize a novelty-seeking objective (e.g., 
 To address these limitations, we developed a novel agent design that only depends on pixel-based observations (i.e., RGB frames) with the ability to condition its exploration behavior based on a human preference introduced in the form of demonstrations. 
 </div>
 
+### Previous Work
+
+Despite the existence of previous AI agents for game testing work ([5](https://ieeexplore.ieee.org/document/8848091), [6](https://ieeexplore.ieee.org/document/8952543), [7](https://ieeexplore.ieee.org/document/9231552), [8](https://arxiv.org/abs/2103.13798), [9](https://arxiv.org/abs/2201.06865)), there were still research gaps to address as follows:
+
+<ol>
+<li>
+Many of the existing AI agents depend on internal game state information (e.g., 3D semantic maps of the environment) in their state representation, which demands a non-trivial effort from game developers to provide engine integration hooks collecting such internal information. Our PPGTA agent addresses this limitation mainly by depending only on pixel-based (i.e., RGB frames) state representation.
+</li>
+<li>
+Most exploration policies depend solely on novelty rewards without explicit ways to condition /bias the exploration behavior on a given user's preference for exploration, making them inefficient in complex game environments. Our PPGTA agent tackles this limitation by incorporating a preference enforcement module that regulates the exploration behavior based on preference style rewards. 
+</li>
+<li>
+Utilized designs for imitation learning policies do not properly consider spatio-temporal dependencies between different semantics in the scene (e.g., assets). Our PPGTA agent utilizes a novel memory-based imitation policy with a pre-trained visual feature extractor to capture time-based relationships across semantics in the scene.
+</li>
+</ol>
+
 ### Game Environment
 
 <p align="center">
@@ -53,34 +69,29 @@ We aimed to design a game scenario that resembles the complexity of real open-wo
 
 <div style="text-align: justify">
 
-We extend the Inspector agent framework ([5](https://ieeexplore.ieee.org/abstract/document/9893630)) to implement our AI agent. The Inspector agent consists of three main building blocks, including:
+Our Preference-conditioned Pixel-based Game Testing Agent (PPGTA) extends on the Inspector agent consists of four main building blocks, including:
 
 <ul>
 <li> An object detector model to detect objects of interest (OOIs) during game exploration.</li>
 <li> An imitation learning policy to execute bug testing based human tester demonstration datasets.</li>
-<li> An exploration policy for exploring the environment guided by curiosity rewards</li>
+<li> A novelty model for exploring the environment guided by curiosity rewards (i.e., incentifying novel scenes).</li>
+<li> A preference enforcement module that regulates the exploration behavior guided by human's preference introduced by demonstrations.</li>
 </ul>
 
 </div>
 
 <p align="center">
- ![]({{ site.url }}{{ site.baseurl }}/images/respic/aiagent_demo22/inspector_agent.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
+ ![]({{ site.url }}{{ site.baseurl }}/images/respic/aiagent_demo22/main_framework.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
 </p>
 
-<div style="text-align: justify">
-We train our object detection model by fine-tuning a Faster R-CNN Model ([6](https://arxiv.org/abs/1506.01497)) pre-trained on the Microsoft Common Objects in Context (COCO) dataset in a few-shot learning manner ([7](https://arxiv.org/abs/2003.06957)). We have collected a small dataset for our OOIs with a size of 2.5K samples. We further split this dataset into 2K training samples, 200 validation samples, and 300 test samples.
-</div>
-
-<div style="text-align: justify">
-For imitation learning (IL) policies, we collected 200 test trajectories for each bug type performed by human test engineers. On average, a test trajectory lasts for 2 minutes. Besides, we gathered around 150 demonstrations for the path following to represent the user's preference for conditioning the agent's exploration policy. We followed a 70%-10%-20% splitting for training, validation, and test datasets across each OOI object class, then combined these individual datasets to get the final ones. Each data sample is a stack of 4 input RGB frames downsized to 128 X 128 X 3 and an action label with random colorization and grayscale augmentations (i.e., each frame has a 50% chance for RGB, 25% for colorization augment, and 25% for grayscale augment). We designed an IL policy model composed of a pre-trained visual extractor trunk followed by a GRU cell and a final fully-connected projection head for action classification. We evaluated IL policies using a 5-fold cross-validation strategy with classification accuracy metric.
-</div>
 
 <div style="text-align: justify">
 
 </div>
 
-### Experimental Setup
+### Demo
 
-### Results and Discussion
+![]({{ site.url }}{{ site.baseurl }}/images/respic/aiagent_demo22/AI_Agents_Intro_Video.mp4){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
 
-### Conclusion
+### Further Reading
+For further details about our PPGTA agent, please refer to our research ([paper](https://arxiv.org/abs/2308.09289)) that we recently presented at the IEEE Conference on Games (CoG) 2023.
