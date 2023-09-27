@@ -34,19 +34,28 @@ Generally, there are two types of visual bugs: single-frame bugs and multi-frame
 Single-frames bugs are apparent in individual images, and there is no temporal comtext between the frames before and after. Texture seams and clipping bugs are typical single-frame bugs. 
 Multi-frame bugs are not visiable in individual images, but apparent when images are viewed in sequence. Temporal context has to be examined to identify this type of bugs. Typical multi-frame bugs are Level of Details(LOD) Pop, Z-fighting, white box occlusion, etc. 
 
-##### Texture Seam
+##### Texture bug - low resolution
 
 <p align="center">
-![]({{ site.url }}{{ site.baseurl }}/images/respic/visualbug/intro_seam.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
+![]({{ site.url }}{{ site.baseurl }}/images/respic/visualbug/lowres.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
 </p>
+
+##### Texture bug - stretched texture
+
+<p align="center">
+![]({{ site.url }}{{ site.baseurl }}/images/respic/visualbug/stretched.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
+</p>
+
+##### Clipping
+
 
 ##### Level of Details(LOD) Pop
 
 <p align="center">
-![]({{ site.url }}{{ site.baseurl }}/images/respic/visualbug/intro_lod.png){: style="width: 1000px; float: center;margin-right: 30px; border: 10px"}
+![]({{ site.url }}{{ site.baseurl }}/images/respic/visualbug/lodpop+1080.mp4){: style="width: 1000px; float: center;margin-right: 30px; border: 10px"}
 </p>
 
-##### Clipping
+
 
 
 ### Unique challenges in Visual Bug Detection in Gaming
