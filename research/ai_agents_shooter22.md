@@ -90,7 +90,7 @@ Our Preference-conditioned Pixel-based Game Testing Agent (PPGTA) extends on the
 </div>
 
 ### Demo
-
+<video width="600" height="400" controls>
   <source src="{{ site.url }}{{ site.baseurl }}/images/respic/aiagent_demo22/tiny_agents_demo.mp4" type="video/mp4">
 </video>
 
