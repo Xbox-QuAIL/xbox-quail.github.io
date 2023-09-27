@@ -75,7 +75,23 @@ To address these challenges, we developed a synthetic data generator which allow
 
 </div>
 
+### Case Study
 
+##### LOD Pop Detection
+In this section, we will explore some of the work that has been don to apply ML/DL to automate the detection of LOD pop bug in video game. One example of a LOD pop in Gears 5 has been shown previously. An LOD pop bug occurs when the player can observe a sudden appearance, disappearance, or change in resolutin of an in-game object. LOD pops are not only disruptive for the player, but they are also difficult to detect using ML/DL models. The key technical challenges include:
+<ol>
+<li>
+ Pops are highly transient, disappears after several frames, and persist for a few seconds at most.
+</li>
+ <li>
+ •	Pops are not visually consistent, because any and every object in the game could cause a pop.
+</li>
+ <li>
+ Pops usually only affect a part of the game and are highly localized.
+</li>
+</ol>
+
+To detect LOD pops, we started with the standard Faster-RCNN object detection architecture, as this allows us to localize on the specific object that is causing a pop on the screen. To improve model performance, we modified the architecture to account for the temporal nature of pops. While the model’s accuracy may vary depending on the game title, we have observed that our models consistently achieve >0.8 precision and recall metrics on the held-out balanced test set. To date, our LOD pop models have been tested extensively across several AAA games. In mature deployment, ML models have contributed up to 70% of the LOD pops filed for the entire game, with over 1000+ ML-identified bug instances fixed by our game developers.
 
 ### Methodology
 
