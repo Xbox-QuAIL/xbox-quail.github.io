@@ -7,3 +7,13 @@
     display:
   highlight: 1
   news2: 
+
+  - title: "Automating visual bug detection in video game"
+  image: visualbug/banner.png
+  description: We are leveraging computer vision techniques to automate visual bug detection, which transform how game studios deliver quality games to their players.
+  authors: Wei Huang
+  link:
+    url: visualbug
+    display:
+  highlight: 1
+  news2: 
