@@ -90,9 +90,12 @@ Our Preference-conditioned Pixel-based Game Testing Agent (PPGTA) extends on the
 </div>
 
 ### Demo
+
+<p align="center">
 <video width="600" height="400" controls>
   <source src="{{ site.url }}{{ site.baseurl }}/images/respic/aiagent_demo22/tiny_agents_demo.mp4" type="video/mp4">
 </video>
+</p>
 
 ### Further Reading
 For further details about our PPGTA agent, please refer to our research ([paper](https://arxiv.org/abs/2308.09289)) that we recently presented at the IEEE Conference on Games (CoG) 2023.
