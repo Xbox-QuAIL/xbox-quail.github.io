@@ -67,6 +67,18 @@ We extend the Inspector agent framework ([5](https://ieeexplore.ieee.org/abstrac
  ![]({{ site.url }}{{ site.baseurl }}/images/respic/aiagent_demo22/inspector_agent.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
 </p>
 
+<div style="text-align: justify">
+We train our object detection model by fine-tuning a Faster R-CNN Model ([6](https://arxiv.org/abs/1506.01497)) pre-trained on the Microsoft Common Objects in Context (COCO) dataset in a few-shot learning manner ([7](https://arxiv.org/abs/2003.06957)). We have collected a small dataset for our OOIs with a size of 2.5K samples. We further split this dataset into 2K training samples, 200 validation samples, and 300 test samples.
+</div>
+
+<div style="text-align: justify">
+For imitation learning (IL) policies, we collected 200 test trajectories for each bug type performed by human test engineers. On average, a test trajectory lasts for 2 minutes. Besides, we gathered around 150 demonstrations for the path following to represent the user's preference for conditioning the agent's exploration policy. We followed a 70%-10%-20% splitting for training, validation, and test datasets across each OOI object class, then combined these individual datasets to get the final ones. Each data sample is a stack of 4 input RGB frames downsized to 128 X 128 X 3 and an action label with random colorization and grayscale augmentations (i.e., each frame has a 50% chance for RGB, 25% for colorization augment, and 25% for grayscale augment). We designed an IL policy model composed of a pre-trained visual extractor trunk followed by a GRU cell and a final fully-connected projection head for action classification. We evaluated IL policies using a 5-fold cross-validation strategy with classification accuracy metric.
+</div>
+
+<div style="text-align: justify">
+
+</div>
+
 ### Experimental Setup
 
 ### Results and Discussion
