@@ -84,7 +84,7 @@ In this section, we will explore some of the work that has been don to apply ML/
  Pops are highly transient, disappears after several frames, and persist for a few seconds at most.
 </li>
  <li>
- •	Pops are not visually consistent, because any and every object in the game could cause a pop.
+ Pops are not visually consistent, because any and every object in the game could cause a pop.
 </li>
  <li>
  Pops usually only affect a part of the game and are highly localized.
