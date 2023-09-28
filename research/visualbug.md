@@ -40,26 +40,29 @@ Generally, there are two types of visual bugs: single-frame bugs and multi-frame
 ##### Single-frame bugs
 Single-frames bugs are apparent in individual images, and there is no temporal comtext between the frames before and after. Texture bug,  floating/misplaced objects, and clipping bugs are typical single-frame bugs. 
 
-1. Texture bug - low resolution
+1. Texture bug
+Texture measures the visual perception of objects’ surface condition in an image, such as coarseness, regularity, roughness, etc. Two common types of object texture bugs are low resolution and stretched. 
 
+   - low resolution
 <p align="center">
 ![]({{ site.url }}{{ site.baseurl }}/images/respic/visualbug/lowres.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
 </p>
 
-2. Texture bug - stretched texture
+   - stretched texture
 
 <p align="center">
 ![]({{ site.url }}{{ site.baseurl }}/images/respic/visualbug/stretched.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
 </p>
 
-3. Floating object
+2. Floating object
+Floating object bug is one type of misplacement bug, where the object is supposed to be grounded but it's floating.
 
 <p align="center">
 ![]({{ site.url }}{{ site.baseurl }}/images/respic/visualbug/floating.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
 </p>
 
-4. Clipping
-
+3. Clipping
+Clipping/colission bug happens when two objects intersect, either the player/weapon or object are set incorrectly which creates visual aberrations that would not occur in the physical world. 
 <p align="center">
 ![]({{ site.url }}{{ site.baseurl }}/images/respic/visualbug/clipping.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
 </p>
