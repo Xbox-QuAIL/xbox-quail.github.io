@@ -29,10 +29,11 @@ In recent years, computer vision(CV) has gained great achievements and success i
 </li>
 </ol>
 
-### Example of visual bugs
+### Visual Bugs
 Generally, there are two types of visual bugs: single-frame bugs and multi-frame bugs. 
-Single-frames bugs are apparent in individual images, and there is no temporal comtext between the frames before and after. Texture seams and clipping bugs are typical single-frame bugs. 
-Multi-frame bugs are not visiable in individual images, but apparent when images are viewed in sequence. Temporal context has to be examined to identify this type of bugs. Typical multi-frame bugs are Level of Details(LOD) Pop, Z-fighting, white box occlusion, etc. 
+
+#### Single-frame bugs
+Single-frames bugs are apparent in individual images, and there is no temporal comtext between the frames before and after. Texture bug,  floating/misplaced objects, and clipping bugs are typical single-frame bugs. 
 
 ##### Texture bug - low resolution
 
@@ -46,19 +47,31 @@ Multi-frame bugs are not visiable in individual images, but apparent when images
 ![]({{ site.url }}{{ site.baseurl }}/images/respic/visualbug/stretched.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
 </p>
 
-##### Clipping
-
-
-##### Level of Details(LOD) Pop
+##### Floating object
 
 <p align="center">
-![]({{ site.url }}{{ site.baseurl }}/images/respic/visualbug/lodpop+1080.mp4){: style="width: 1000px; float: center;margin-right: 30px; border: 10px"}
+![]({{ site.url }}{{ site.baseurl }}/images/respic/visualbug/floating.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
 </p>
 
+##### Clipping
 
+#### Multi-frame bugs
 
+Multi-frame bugs are not visiable in individual images, but apparent when images are viewed in sequence. Temporal context has to be examined to identify this type of bugs. Typical multi-frame bugs are Level of Details(LOD) Pop, Z-fighting, white box occlusion, etc. 
 
-### Unique challenges in Visual Bug Detection in Gaming
+##### Level of Details(LOD) pop
+
+<p align="center">
+![]({{ site.url }}{{ site.baseurl }}/images/respic/visualbug/lodpop-1080.mp4){: style="width: 1000px; float: center;margin-right: 30px; border: 10px"}
+</p>
+
+##### Culling pop
+
+<p align="center">
+![]({{ site.url }}{{ site.baseurl }}/images/respic/visualbug/cullingpop-1080.mp4){: style="width: 1000px; float: center;margin-right: 30px; border: 10px"}
+</p>
+
+### Unique challenges in visual bug detection in gaming
 <div style="text-align: justify">
 
 The video game world is very different from our real world, which introduces unique challenges in applying CV to detect visual bugs in gaming.
@@ -84,9 +97,15 @@ To address these challenges, we developed a synthetic data generator which allow
 
 </div>
 
+### Methodology
+
+##### Multi-frame visual bug detection
+Multi-frame bugs cannot be visually recognized in individual image because they are visually correct in a single frame. These bugs can only be detected when images are viewed in sequence. Therefore, it is necessary to apply multi-frame or video-based visual bug detection methods. This means that the video-based visual bugs approach should take in either a video or multiple frames for analysis. Currently, there are few studies on video-based bug detection in the video game domain. In ([4](https://arxiv.org/abs/2208.12674v1)), a supervised method was developed to detect LOD pop, but the study only took two frames as input and required labeling for algorithm training. Several reasons may limit the development of video-based visual bug studies. Firstly, obtaining sufficient labeled data for multi-frame based visual bugs is challenging. Secondly, video games exhibit extreme variability in distribution, even within a single game, let alone across different games. Additionally, the gap between existing public video datasets and video game datasets is significant, which limits the performance of transfer learning. Despite these challenges and limited research on video-based visual bug detection, there are still potential approaches to achieve video-based visual bug detection in video games. One way is to view video-based visual bug detection as a video anomaly detection problem([5](https://arxiv.org/abs/1712.09867), [6](https://www.sciencedirect.com/science/article/abs/pii/S0262885620302109 ), [7](https://arxiv.org/abs/2009.14146)). In this case, some frame reconstruction and prediction techniques in the video anomaly detection field can be used for video-based visual bug detection. Another way is to use current popular self-supervised learning methods ([8](https://arxiv.org/pdf/2206.08356.pdf), [9](https://arxiv.org/abs/2207.00419)) to learn spatio-temporal features for each frame or video clip and fine-tune algorithm based on limited video visual bug datasets for image-level or clip-level classification or detection. Other potential methods, such as object tracking in videos ([10](https://arxiv.org/abs/2304.11968)), may also work for multi-frame visual bugs, such as culling pop bugs. Investigating these existing methods for video-based visual bug detection while researching new approaches that work for visual bugs in the field of video games is worth considering. 
+
+
 ### Case Study
 
-##### LOD Pop Detection
+##### LOD pop detection
 In this section, we will explore some of the work that has been don to apply ML/DL to automate the detection of LOD pop bug in video game. One example of a LOD pop has been shown previously. An LOD pop bug occurs when the player can observe a sudden appearance, disappearance, or change in resolutin of an in-game object. LOD pops are not only disruptive for the player, but they are also difficult to detect using ML/DL models. The key technical challenges include:
 <ol>
 <li>
@@ -102,7 +121,7 @@ In this section, we will explore some of the work that has been don to apply ML/
 
 To detect LOD pops, we started with the standard Faster-RCNN object detection architecture, as this allows us to localize on the specific object that is causing a pop on the screen. To improve model performance, we modified the architecture to account for the temporal nature of pops. While the model’s accuracy may vary depending on the game title, we have observed that our models consistently achieve >0.8 precision and recall metrics on the held-out balanced test set. To date, our LOD pop models have been tested extensively across several AAA games. In mature deployment, ML models have contributed up to 70% of the LOD pops filed for the entire game, with over 1000+ ML-identified bug instances fixed by our game developers.
 
-### Methodology
+
 
 ### Experimental Setup
 
