@@ -1,7 +1,7 @@
 ![]({{ site.url }}{{ site.baseurl }}/images/respic/visualbug/banner.png){: style="width: 1000px; height:300px; float: center;"}
 
 ### Automating Visual Bug Detection in Video Games
-##### By Wei Huang | Applied Research Scientist
+##### By Wei Huang | Applied Research Scientist II
 
 
 ### Overview
