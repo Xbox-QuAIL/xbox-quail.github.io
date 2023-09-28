@@ -32,40 +32,49 @@ In recent years, computer vision(CV) has gained great achievements and success i
 ### Visual Bugs
 Generally, there are two types of visual bugs: single-frame bugs and multi-frame bugs. 
 
-#### Single-frame bugs
+<p align="center">
+![]({{ site.url }}{{ site.baseurl }}/images/respic/visualbug/single-multi.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
+</p>
+
+
+##### Single-frame bugs
 Single-frames bugs are apparent in individual images, and there is no temporal comtext between the frames before and after. Texture bug,  floating/misplaced objects, and clipping bugs are typical single-frame bugs. 
 
-##### Texture bug - low resolution
+1. Texture bug - low resolution
 
 <p align="center">
 ![]({{ site.url }}{{ site.baseurl }}/images/respic/visualbug/lowres.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
 </p>
 
-##### Texture bug - stretched texture
+2. Texture bug - stretched texture
 
 <p align="center">
 ![]({{ site.url }}{{ site.baseurl }}/images/respic/visualbug/stretched.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
 </p>
 
-##### Floating object
+3. Floating object
 
 <p align="center">
 ![]({{ site.url }}{{ site.baseurl }}/images/respic/visualbug/floating.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
 </p>
 
-##### Clipping
+4. Clipping
 
-#### Multi-frame bugs
+<p align="center">
+![]({{ site.url }}{{ site.baseurl }}/images/respic/visualbug/clipping.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
+</p>
+
+##### Multi-frame bugs
 
 Multi-frame bugs are not visiable in individual images, but apparent when images are viewed in sequence. Temporal context has to be examined to identify this type of bugs. Typical multi-frame bugs are Level of Details(LOD) Pop, Z-fighting, white box occlusion, etc. 
 
-##### Level of Details(LOD) pop
+1. Level of Details(LOD) pop
 
 <p align="center">
 ![]({{ site.url }}{{ site.baseurl }}/images/respic/visualbug/lodpop-1080.mp4){: style="width: 1000px; float: center;margin-right: 30px; border: 10px"}
 </p>
 
-##### Culling pop
+2. Culling pop
 
 <p align="center">
 ![]({{ site.url }}{{ site.baseurl }}/images/respic/visualbug/cullingpop-1080.mp4){: style="width: 1000px; float: center;margin-right: 30px; border: 10px"}
