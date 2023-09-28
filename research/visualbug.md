@@ -44,18 +44,17 @@ Single-frames bugs are apparent in individual images, and there is no temporal c
 Texture measures the visual perception of objects’ surface condition in an image, such as coarseness, regularity, roughness, etc. Two common types of object texture bugs are low resolution and stretched. 
 
    - Low resolution
-     
-    <p align="center">
-![]({{ site.url }}{{ site.baseurl }}/images/respic/visualbug/lowres.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
-</p>
-   - Stretched texture
-   
    <p align="center">
-![]({{ site.url }}{{ site.baseurl }}/images/respic/visualbug/stretched.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
-</p>
+    ![]({{ site.url }}{{ site.baseurl }}/images/respic/visualbug/lowres.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
+   </p>
+    
+   - Stretched texture
+   <p align="center">
+   ![]({{ site.url }}{{ site.baseurl }}/images/respic/visualbug/stretched.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
+   </p>
 
 
-2. Floating object
+3. Floating object
 Floating object bug is one type of misplacement bug, where the object is supposed to be grounded but it's floating.
 
 <p align="center">
