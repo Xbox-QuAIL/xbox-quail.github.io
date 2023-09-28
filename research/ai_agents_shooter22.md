@@ -70,7 +70,7 @@ We aimed to design a game scenario that resembles the complexity of real open-wo
 <div style="text-align: justify">
 
 <p align="center">
- ![]({{ site.url }}{{ site.baseurl }}/images/respic/aiagent_demo22/main_framework.jpg){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
+ ![]({{ site.url }}{{ site.baseurl }}/images/respic/aiagent_demo22/main_framework.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
 </p>
 
 Our Preference-conditioned Pixel-based Game Testing Agent (PPGTA) extends on the Inspector agent consists of four main building blocks, including:
