@@ -43,11 +43,13 @@ Single-frames bugs are apparent in individual images, and there is no temporal c
 1. Texture bug
 Texture measures the visual perception of objects’ surface condition in an image, such as coarseness, regularity, roughness, etc. Two common types of object texture bugs are low resolution and stretched. 
 
-   - low resolution
-   <p align="center">
+   - Low resolution
+     
+    <p align="center">
 ![]({{ site.url }}{{ site.baseurl }}/images/respic/visualbug/lowres.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
 </p>
    - Stretched texture
+   
    <p align="center">
 ![]({{ site.url }}{{ site.baseurl }}/images/respic/visualbug/stretched.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
 </p>
