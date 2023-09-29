@@ -105,13 +105,17 @@ Multi-frame bugs are not visiable in individual images, but apparent when images
 1. Level of Details(LOD) pop
 
 <p align="center">
-![lodpop]({{ site.url }}{{ site.baseurl }}/images/respic/visualbug/lodpop-1080.mp4){: style="width: 1000px; float: center;margin-right: 30px; border: 10px"}
+<video width="600" height="400" controls>
+  <source src="{{ site.url }}{{ site.baseurl }}/images/respic/visualbug/lodpop-1080.mp4" type="video/mp4">
+</video>
 </p>
 
 2. Culling pop
 
 <p align="center">
-![cullingpop]({{ site.url }}{{ site.baseurl }}/images/respic/visualbug/cullingpop-1080.mp4){: style="width: 1000px; float: center;margin-right: 30px; border: 10px"}
+<video width="600" height="400" controls>
+  <source src="{{ site.url }}{{ site.baseurl }}/images/respic/visualbug/cullingpop-1080.mp4" type="video/mp4">
+</video>
 </p>
 
 Multi-frame bugs cannot be visually recognized in individual image because they are visually correct in a single frame. These bugs can only be detected when images are viewed in sequence. Therefore, it is necessary to apply multi-frame or video-based visual bug detection methods. This means that the video-based visual bugs approach should take in either a video or multiple frames for analysis. Currently, there are few studies on video-based bug detection in the video game domain. In ([4](https://arxiv.org/abs/2208.12674v1)), a supervised method was developed to detect LOD pop, but the study only took two frames as input and required labeling for algorithm training. Several reasons may limit the development of video-based visual bug studies. Firstly, obtaining sufficient labeled data for multi-frame based visual bugs is challenging. Secondly, video games exhibit extreme variability in distribution, even within a single game, let alone across different games. Additionally, the gap between existing public video datasets and video game datasets is significant, which limits the performance of transfer learning. Despite these challenges and limited research on video-based visual bug detection, there are still potential approaches to achieve video-based visual bug detection in video games. One way is to view video-based visual bug detection as a video anomaly detection problem([5](https://arxiv.org/abs/1712.09867), [6](https://www.sciencedirect.com/science/article/abs/pii/S0262885620302109 ), [7](https://arxiv.org/abs/2009.14146)). In this case, some frame reconstruction and prediction techniques in the video anomaly detection field can be used for video-based visual bug detection. Another way is to use current popular self-supervised learning methods ([8](https://arxiv.org/pdf/2206.08356.pdf), [9](https://arxiv.org/abs/2207.00419)) to learn spatio-temporal features for each frame or video clip and fine-tune algorithm based on limited video visual bug datasets for image-level or clip-level classification or detection. Other potential methods, such as object tracking in videos ([10](https://arxiv.org/abs/2304.11968)), may also work for multi-frame visual bugs, such as culling pop bugs. Investigating these existing methods for video-based visual bug detection while researching new approaches that work for visual bugs in the field of video games is worth considering. 
