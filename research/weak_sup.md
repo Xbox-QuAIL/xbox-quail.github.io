@@ -38,7 +38,7 @@ Our method involves a multi-stage approach for processing gameplay videos with t
 - **Objective:** 
    Utilizes a pre-trained promptable segmentation model to segment an unlabeled gameplay video.
    
-- **Process:**
+- **Method:**
    Recent large pretrained segmentation models are used to perform automatic or user guided geometric prompts. Points are placed uniformly across the image in the absence of a prompt, representing the automatic/zero-shot segmentation prompt. Priors can be used to guide SAM in segmentation.
 
 #### **2. Filtering Stage:**
@@ -46,7 +46,7 @@ Our method involves a multi-stage approach for processing gameplay videos with t
    Filter and deduplicate semantic visual features omnipresent in scenes. Eg. trees, walking trails, or grass, prevalent in the outdoor park setting of our environment Giantmap. The final set of masks represents the semantics of a target game captured in unsupervised playthroughs, making them suitable candidates for visual bug augmentation.
 
 - **Process:**
-   Uses CLIP to extract embeddings of each masked region for both autonomous and interactive filtering. Autonomous filtering involves clustering embeddings using Hierarchical Agglomerative Clustering (HAC) and resampling masks from each cluster to balance distribution. Interactive filtering allows users to select or reject certain masks using text prompts before clustering. 
+   Uses pretrained image-text models to extract embeddings of each masked region for both autonomous and interactive filtering. Autonomous filtering involves clustering embeddings and resampling masks from each cluster to balance distribution. Interactive filtering allows users to select or reject certain masks using human guided text prompts before clustering. 
 
 #### **3. Augmentation Stage:**
 - **Objective:**
@@ -70,24 +70,22 @@ The proposed methodology, when applied to detect first-person player clipping/co
 Our findings harness the potential of large-pretrained visual models to enhance our training data. Our approach allows for the injection of priors through prompting, both geometric and text-based. A significant advantage of promptable filtering is its simplicity, making it accessible for non-ML professionals, allowing them to integrate their expert knowledge into the self-supervised objective. 
 </div>
 
-<p align="center">
- ![]({{ site.url }}{{ site.baseurl }}/images/respic/weak_sup/method1.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
-</p>
-
 
 
 ### Further Reading
 For further details on our methods reference our work ([paper](https://arxiv.org/abs/2309.11077))
 
 
-### Citation
+#### Citation
 
 
-`@misc{rahman2023weak,
+`
+   @misc{rahman2023weak,
       title={Weak Supervision for Label Efficient Visual Bug Detection}, 
       author={Farrukh Rahman},
       year={2023},
       eprint={2309.11077},
       archivePrefix={arXiv},
       primaryClass={cs.CV}
-}` 
+      }
+` 

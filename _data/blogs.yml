@@ -21,7 +21,7 @@
   news2: 
 
 - title: "Weak Supervision for Label Efficient Visual Bug Detection"
-  image: weak_sup/banner.png
+  image: weak_sup/method1.png
   description:  We propose a novel method, utilizing unlabeled gameplay and domain-specific augmentations to generate datasets & self-supervised objectives used during pre-training or multi-task settings for downstream visual bug detection.
   authors: Farrukh Rahman
   mediadir: weak_sup
