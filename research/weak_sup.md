@@ -23,107 +23,64 @@ Developing extensive labeled datasets pivotal for the success of deep learning i
 
 <div style="text-align: justify">
 
-Addressing the challenge in our work we propose the use of unlabeled gameplay along with domain-specific augmentation techniques to generate datasets and self-supervised objectives. These can be used as pre-training or multi-task along with a very small amount of labeled data (order of 10s or 100s of visual bugs) enhancing the performance of the model.
+Addressing the challenge, in our work we propose the use of unlabeled gameplay along with domain-specific augmentation techniques to generate datasets and self-supervised objectives. These can be used as pre-training or multi-task along with a very small amount of labeled data (order of 10s or 100s of visual bugs) enhancing the performance of the model.
+</div>
+
+<p align="center">
+ ![]({{ site.url }}{{ site.baseurl }}/images/respic/weak_sup/method1.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
+</p>
+General overview of our method: 
+
+- **Segmentation Stage:** Given unlabeled gameplay video, we apply a geometric promptable segmentation model (SAM) to automatically extract masks. \textbf{2. Filtering Stage:} The obtained masks are then filtered either in an unsupervised manner and/or optionally via text-interactive filtering using text-image model (CLIP). \textbf{3. Augmentation Stage:} Labeled \textit{`good'} target instances, and/or unlabeled target instances, are augmented using the filtered masks producing samples used to train a surrogate objective.
+Our method involves a multi-stage approach for processing gameplay videos with the goal of augmenting visual bugs. Below is a concise summary of each stage of the method:
+
+#### **1. Segmentation Stage:**
+- **Objective:** 
+   Utilizes a pre-trained promptable segmentation model to segment an unlabeled gameplay video.
+   
+- **Process:**
+   Recent large pretrained segmentation models are used to perform automatic or user guided geometric prompts. Points are placed uniformly across the image in the absence of a prompt, representing the automatic/zero-shot segmentation prompt. Priors can be used to guide SAM in segmentation.
+
+#### **2. Filtering Stage:**
+- **Objective:**
+   Filter and deduplicate semantic visual features omnipresent in scenes. Eg. trees, walking trails, or grass, prevalent in the outdoor park setting of our environment Giantmap. The final set of masks represents the semantics of a target game captured in unsupervised playthroughs, making them suitable candidates for visual bug augmentation.
+
+- **Process:**
+   Uses CLIP to extract embeddings of each masked region for both autonomous and interactive filtering. Autonomous filtering involves clustering embeddings using Hierarchical Agglomerative Clustering (HAC) and resampling masks from each cluster to balance distribution. Interactive filtering allows users to select or reject certain masks using text prompts before clustering. 
+
+#### **3. Augmentation Stage:**
+- **Objective:**
+   Create a self-supervised objective through domain-specific augmentation using masks and target images. The method is flexible, allowing the source and target image to be identical in certain scenarios and can be applied across various visual bug types.
+
+- **Process:**
+   For first person player clipping, positives are created by overlaying the source mask *over* the target image's weapon area, while negatives are positioned *behind* the weapon, respecting the target weapon mask. Classifying positives vs negatives serve as our self-supervised objective for FPPC
+
+
+See our method instantiated for first person player clipping below:
+<p align="center">
+ ![]({{ site.url }}{{ site.baseurl }}/images/respic/weak_sup/methodClip.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
+</p>
+
+### Results and Applications:
+
+<div style="text-align: justify">
+
+The proposed methodology, when applied to detect first-person player clipping/collision bugs in the expansive Giantmap game world, showcased substantial effectiveness, improving over a strong supervised baseline and capturing enough signal to outperform low-labeled supervised settings. It also demonstrated adaptability across various visual bugs, suggesting its broad applicability in curating datasets for numerous image and video tasks within video games beyond just visual bugs. 
+
+Our findings harness the potential of large-pretrained visual models to enhance our training data. Our approach allows for the injection of priors through prompting, both geometric and text-based. A significant advantage of promptable filtering is its simplicity, making it accessible for non-ML professionals, allowing them to integrate their expert knowledge into the self-supervised objective. 
 </div>
 
 <p align="center">
  ![]({{ site.url }}{{ site.baseurl }}/images/respic/weak_sup/method1.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
 </p>
 
-The described method involves a multi-stage approach for processing gameplay videos with the goal of augmenting visual bugs, specifically in a first-person shooting game. Below is a concise summary of each stage of the method:
 
-#### **1. Segmentation Stage:**
-- **Objective:** 
-   Utilizes a pre-trained segmentation model to segment different regions from an unlabeled gameplay video.
-   
-- **Process:**
-   SAM can perform auto-prompted or geometrically prompted segmentation. Points are placed uniformly across the image in the absence of a prompt, representing the automatic/zero-shot segmentation prompt. Priors can be used to guide SAM in segmentation.
-
-#### **2. Filtering Stage:**
-- **Objective:**
-   Filter and deduplicate semantic visual features like trees, walking trails, or grass, prevalent in the outdoor park setting of the game.
-
-- **Process:**
-   Uses CLIP to extract embeddings of each masked region for both autonomous and interactive filtering. Autonomous filtering involves clustering embeddings using Hierarchical Agglomerative Clustering (HAC) and resampling masks from each cluster to balance distribution. Interactive filtering allows users to select or reject certain masks using text prompts before clustering. The final set of masks represents the semantics of a target game captured in unsupervised playthroughs, making them suitable candidates for visual bug augmentation.
-
-#### **3. Augmentation Stage:**
-- **Objective:**
-   Create a self-supervised objective through domain-specific augmentation using masks and target images.
-
-- **Process:**
-   Positive examples denote bugs and negative examples denote normal or no-bug situations. The method is flexible, allowing the source and target image to be identical in certain scenarios and can be applied across various visual bug types.
-
-
-### Results and Applications:
-
-The proposed methodology, when applied to detect first-person player clipping/collision bugs in the expansive Giantmap game world, showcased substantial effectiveness, improving over a strong supervised baseline and capturing enough signal to outperform low-labeled supervised settings. It also demonstrated adaptability across various visual bugs, suggesting its broad applicability in curating datasets for numerous image and video tasks within video games beyond just visual bugs.
-
-### Previous Work
-
-Despite the existence of previous AI agents for game testing work ([5](https://ieeexplore.ieee.org/document/8848091), [6](https://ieeexplore.ieee.org/document/8952543), [7](https://ieeexplore.ieee.org/document/9231552), [8](https://arxiv.org/abs/2103.13798), [9](https://arxiv.org/abs/2201.06865)), there were still research gaps to address as follows:
-
-<ol>
-<li>
-Many of the existing AI agents depend on internal game state information (e.g., 3D semantic maps of the environment) in their state representation, which demands a non-trivial effort from game developers to provide engine integration hooks collecting such internal information. Our PPGTA agent addresses this limitation mainly by depending only on pixel-based (i.e., RGB frames) state representation.
-</li>
-<li>
-Most exploration policies depend solely on novelty rewards without explicit ways to condition /bias the exploration behavior on a given user's preference for exploration, making them inefficient in complex game environments. Our PPGTA agent tackles this limitation by incorporating a preference enforcement module that regulates the exploration behavior based on preference style rewards. 
-</li>
-<li>
-Utilized designs for imitation learning policies do not properly consider spatio-temporal dependencies between different semantics in the scene (e.g., assets). Our PPGTA agent utilizes a novel memory-based imitation policy with a pre-trained visual feature extractor to capture time-based relationships across semantics in the scene.
-</li>
-</ol>
-
-### Game Environment
-
-<p align="center">
- ![]({{ site.url }}{{ site.baseurl }}/images/respic/aiagent_demo22/shooter_env.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
-</p>
-
-<div style="text-align: justify">
-We aimed to design a game scenario that resembles the complexity of real open-world AAA games. Our demo game mimics a large city park (e.g., New York Hyde Park) with a total playable are of 8.6 square kilometers, including trails, green spaces, lakes, bridges, and service buildings like cafeterias and toilets. Along the trials, there are objects to be inspected for bugs such as clipping or texture. Yet, not all objects are of interest to test. The agent's task is to explore such an open-world environment, find objects of interest, and perform bug testing on them similarly to human tester demonstrations.
-</div>
-
-<p align="center">
- ![]({{ site.url }}{{ site.baseurl }}/images/respic/aiagent_demo22/task_objectives.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
-</p>
-
-### Methodology
-
-<div style="text-align: justify">
-
-<p align="center">
- ![]({{ site.url }}{{ site.baseurl }}/images/respic/aiagent_demo22/main_framework.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
-</p>
-
-Our Preference-conditioned Pixel-based Game Testing Agent (PPGTA) extends on the Inspector agent consists of four main building blocks, including:
-
-<ul>
-<li> An object detector model to detect objects of interest (OOIs) during game exploration.</li>
-<li> An imitation learning policy to execute bug testing based human tester demonstration datasets.</li>
-<li> A novelty model for exploring the environment guided by curiosity rewards (i.e., incentifying novel scenes).</li>
-<li> A preference enforcement module that regulates the exploration behavior guided by human's preference introduced by demonstrations.</li>
-</ul>
-
-</div>
-
-<div style="text-align: justify">
-
-</div>
-
-### Demo
-
-<p align="center">
-<video width="600" height="400" controls>
-  <source src="{{ site.url }}{{ site.baseurl }}/images/respic/aiagent_demo22/tiny_agents_demo.mp4" type="video/mp4">
-</video>
-</p>
 
 ### Further Reading
 For further details on our methods reference our work ([paper](https://arxiv.org/abs/2309.11077))
 
 
-### citation
+### Citation
 
 
 `@misc{rahman2023weak,
