@@ -23,17 +23,13 @@
   url: farrukhrahman
   group: 2
 
-- name: Beau Yotka
-  photo: beauyotka.jpg
-  info: Game Software Engineer
-  url: beauyotka
-  group: 3
+- name: Faliu Yi
+  photo: faliuyi.jpg
+  info: Senior Applied Research Scientist
+  url: faliuyi
+  group: 2
 
-- name: Matthew Weissman 
-  photo: mathweissman.jpg
-  info: Game Software Engineer
-  url: mathweissman
-  group: 3
+
       
 # - name: Lindsay Liang
 #   photo: lindsayliang.jpg
