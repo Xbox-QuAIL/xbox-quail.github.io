@@ -4,7 +4,7 @@ title: Farrukh Rahman
 position: Applied Scientist II
 handle: Farrukh
 email: 
-linkedin: https://www.linkedin.com/in/farrukh-rahman/
+linkedin: farrukh-rahman
 github:
 scholar: UYW3t3sAAAAJ
 photo: farrukhrahman.jpg
