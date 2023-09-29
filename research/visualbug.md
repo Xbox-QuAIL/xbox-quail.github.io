@@ -136,8 +136,4 @@ In this section, we will explore some of the work that has been don to apply ML/
 To detect LOD pops, we started with the standard Faster-RCNN object detection architecture, as this allows us to localize on the specific object that is causing a pop on the screen. To improve model performance, we modified the architecture to account for the temporal nature of pops. While the model’s accuracy may vary depending on the game title, we have observed that our models consistently achieve >0.8 precision and recall metrics on the held-out balanced test set. To date, our LOD pop models have been tested extensively across several AAA games. In mature deployment, ML models have contributed up to 70% of the LOD pops filed for the entire game, with over 1000+ ML-identified bug instances fixed by our game developers.
 
 
-### Methodology
-### Experimental Setup
-### Results and Discussion
-### Conclusion
 
