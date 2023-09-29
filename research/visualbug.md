@@ -42,7 +42,7 @@ The video game world is very different from our real world, which introduces uni
 Class imbalance. On the frame-by-frame basis, bugs are extremely rare. Generally, bugs are present in <0.1% of frames. In this case, precision must be astronomically high to avoid massive amounts of false positives. 
 </li>
 <li>
-Highly variable distribution. Video games exhibit extreme variability in distribution. Any two games generally have very different visual features, even within same genre. A single game can vary greatly between map, game modes, etc.
+Highly variable distribution. Video games exhibit extreme variability in distribution. Any two games generally have very different visual features, even within same genre. A single game can vary greatly between map, game modes, etc. Below is an example from our shooter game. The gaming environment can be indoor or outdoor. Just for indoor, there are various gaming environments.
 </li>
 </ol>
 
