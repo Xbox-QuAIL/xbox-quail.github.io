@@ -19,7 +19,20 @@ Developing extensive labeled datasets pivotal for the success of deep learning i
 </div>
 
 
+#### Setting
+We used the same GiantMap environment as [Link]({{ site.baseurl }}{% link research/ai_agents_shooter22.md %}) however add 46 additional objects of interest (OOI). Particularly focusing on first-person player clipping (FPPC), where aberrations occur due to incorrectly set collision meshes. We seek to characterize how far in-distribution performance can be advanced with constrained data and assess the model’s efficacy in out-of-distribution (OOD), low-prevalence scenarios.
+
+
+Additional assets added to our GiantMap environment:
+<p align="center">
+ ![]({{ site.url }}{{ site.baseurl }}/images/respic/weak_sup/Gm50AdditionalObj.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
+</p>
+
 ### Proposed Solution
+
+
+
+
 
 <div style="text-align: justify">
 
@@ -46,7 +59,12 @@ Our method involves a multi-stage approach for processing gameplay videos with t
    Filter and deduplicate semantic visual features omnipresent in scenes. Eg. trees, walking trails, or grass, prevalent in the outdoor park setting of our environment Giantmap. The final set of masks represents the semantics of a target game captured in unsupervised playthroughs, making them suitable candidates for visual bug augmentation.
 
 - **Implementation:**
-   Uses pretrained image-text models to extract embeddings of each masked region for both autonomous and interactive filtering. Autonomous filtering involves clustering embeddings and resampling masks from each cluster to balance distribution. Interactive filtering allows users to select or reject certain masks using human guided text prompts before clustering. 
+   Used pretrained image-text models to extract embeddings of each masked region for both autonomous and interactive filtering. Autonomous filtering involves clustering embeddings and resampling masks from each cluster to balance distribution. Interactive filtering allows users to select or reject certain masks using human guided text prompts before clustering. T
+
+Our clustering step is able to capture indistribution and out-of-distribution objects from multi-view perspectives:
+<p align="center">
+ ![]({{ site.url }}{{ site.baseurl }}/images/respic/weak_sup/clustering.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
+</p>
 
 #### **3. Augmentation Stage:**
 - **Objective:**
@@ -61,11 +79,13 @@ See our method instantiated for first person player clipping below:
  ![]({{ site.url }}{{ site.baseurl }}/images/respic/weak_sup/methodClip.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
 </p>
 
+
+
 ### Results and Applications:
 
 <div style="text-align: justify">
 
-The proposed methodology, when applied to detect first-person player clipping/collision bugs in the expansive Giantmap game world, showcased substantial effectiveness, improving over a strong supervised baseline and capturing enough signal to outperform low-labeled supervised settings. It also demonstrated adaptability across various visual bugs, suggesting its broad applicability in curating datasets for numerous image and video tasks within video games beyond just visual bugs. 
+The proposed methodology, when applied to detect first-person player clipping/collision bugs in the expansive Giantmap game world, showcased substantial effectiveness, improving over a strong supervised baseline and capturing enough signal to outperform low-labeled supervised settings. Our pipeline's flexiblity allows it to be adapted across various visual bugs, and suggests its broad applicability in curating datasets for numerous image and video tasks within video games beyond just visual bugs.  
 
 Our findings harness the potential of large-pretrained visual models to enhance our training data. Our approach allows for the injection of priors through prompting, both geometric and text-based. A significant advantage of promptable filtering is its simplicity, making it accessible for non-ML professionals, allowing them to integrate their expert knowledge into the self-supervised objective. 
 </div>
