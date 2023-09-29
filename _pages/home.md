@@ -18,8 +18,9 @@ The Quality AI lab (QuAIL) is an artificial intelligence research lab that is pa
 There are three main research themes at QuAIL:
 
 1. **AI agents for game exploration and inspection**: Solving sequential decision making problems for game space exploration and inspection using deep reinforcement learning agents.
-2. **Game scene understanding**: Developing visual and visual-language models for game scene understanding and representation learning. 
-3. **Transfer learning under low data regimes**: Proposing novel transfer learning methods using self-supervised and semi-supervised learning paradigms for pattern recognition algorithms that can generalize across different games.
+2. **Vidual bug detection in video games**: Researching novel computer vision for visual bug/anomaly detection in video games.
+3. **Game scene understanding**: Developing visual and visual-language models for game scene understanding and representation learning. 
+
 
 ### Technologies and methods
 QuAIL utilizes and contributes to methods from relevant state-of-the-art AI and machine learning literature on deep reinforcement learning, computer vision, and natural language processing.
@@ -35,6 +36,8 @@ We work with closely with numerous collaborators, including engineering and qual
 
 <!-- ### Joining QuAIL
 If you are interested in joining please go to the [recruitment](recruitment) page. -->
+
+
 
 
 
