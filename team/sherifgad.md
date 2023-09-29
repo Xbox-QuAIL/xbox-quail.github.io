@@ -15,4 +15,4 @@ Sherif is working on deep reinforcement learning research for designing game exp
   
 
 ### Education
- - Ph.D., Computer Science, University of New South Wales, Australia
+ - Ph.D., Computer Science, University of New South Wales, Sydney, Australia
