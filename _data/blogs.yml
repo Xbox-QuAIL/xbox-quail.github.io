@@ -2,6 +2,7 @@
   image: aiagent_demo22/banner.png
   description: We designed and evlauated AI agents that can effectively explore and inspect open-world games following human preference in exploration and bug testing while only using raw RGB pixel input.
   authors: Sherif Gad
+  mediadir: aiagent_demo22
   link:
     url: ai_agents_shooter22
     display:
@@ -12,6 +13,7 @@
   image: visualbug/banner.png
   description: We are leveraging computer vision techniques to automate visual bug detection, which transforms how game studios deliver quality games to their players.
   authors: Wei Huang
+  mediadir: visualbug
   link:
     url: visualbug
     display:
