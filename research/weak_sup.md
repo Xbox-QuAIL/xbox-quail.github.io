@@ -26,10 +26,10 @@ Developing extensive labeled datasets pivotal for the success of deep learning i
 Addressing the challenge, in our work we propose the use of unlabeled gameplay along with domain-specific augmentation techniques to generate datasets and self-supervised objectives. These can be used as pre-training or multi-task along with a very small amount of labeled data (order of 10s or 100s of visual bugs) enhancing the performance of the model.
 </div>
 
+General overview of our method: 
 <p align="center">
  ![]({{ site.url }}{{ site.baseurl }}/images/respic/weak_sup/method1.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
 </p>
-General overview of our method: 
 
 - **Segmentation Stage:** Given unlabeled gameplay video, we apply a geometric promptable segmentation model (SAM) to automatically extract masks. \textbf{2. Filtering Stage:} The obtained masks are then filtered either in an unsupervised manner and/or optionally via text-interactive filtering using text-image model (CLIP). \textbf{3. Augmentation Stage:} Labeled \textit{`good'} target instances, and/or unlabeled target instances, are augmented using the filtered masks producing samples used to train a surrogate objective.
 Our method involves a multi-stage approach for processing gameplay videos with the goal of augmenting visual bugs. Below is a concise summary of each stage of the method:
@@ -38,21 +38,21 @@ Our method involves a multi-stage approach for processing gameplay videos with t
 - **Objective:** 
    Utilizes a pre-trained promptable segmentation model to segment an unlabeled gameplay video.
    
-- **Method:**
+- **Implementation:**
    Recent large pretrained segmentation models are used to perform automatic or user guided geometric prompts. Points are placed uniformly across the image in the absence of a prompt, representing the automatic/zero-shot segmentation prompt. Priors can be used to guide SAM in segmentation.
 
 #### **2. Filtering Stage:**
 - **Objective:**
    Filter and deduplicate semantic visual features omnipresent in scenes. Eg. trees, walking trails, or grass, prevalent in the outdoor park setting of our environment Giantmap. The final set of masks represents the semantics of a target game captured in unsupervised playthroughs, making them suitable candidates for visual bug augmentation.
 
-- **Process:**
+- **Implementation:**
    Uses pretrained image-text models to extract embeddings of each masked region for both autonomous and interactive filtering. Autonomous filtering involves clustering embeddings and resampling masks from each cluster to balance distribution. Interactive filtering allows users to select or reject certain masks using human guided text prompts before clustering. 
 
 #### **3. Augmentation Stage:**
 - **Objective:**
    Create a self-supervised objective through domain-specific augmentation using masks and target images. The method is flexible, allowing the source and target image to be identical in certain scenarios and can be applied across various visual bug types.
 
-- **Process:**
+- **Implementation:**
    For first person player clipping, positives are created by overlaying the source mask *over* the target image's weapon area, while negatives are positioned *behind* the weapon, respecting the target weapon mask. Classifying positives vs negatives serve as our self-supervised objective for FPPC
 
 
