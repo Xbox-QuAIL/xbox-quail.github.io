@@ -1,13 +1,13 @@
 ---
 layout: member
 title: Wei Huang
-position: Applied Research Scientist
+position: Applied Research Scientist II
 handle: weihuang
 email: 
 linkedin: wei-huang-04423633/
 github:
 scholar: 1scAVewAAAAJ 
-photo: weihuang.png
+photo: weihuang.jpg
 ---
 
 
