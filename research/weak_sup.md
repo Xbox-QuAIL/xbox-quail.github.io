@@ -7,7 +7,7 @@
 ### Introduction
 
 <div style="text-align: justify">
-The ever-evolving realm of video games demands a constant pursuit of visual quality and fidelity. Given the sprawling, intricate worlds now commonplace in modern games, traditional testing methods do not scale at the same rate making it an uphill task to address the myriad of potential visual discrepancies.  Machine Learning (ML) and Computer Vision (CV) methods can supplement these methods to offer scalable solutions.
+The ever-evolving realm of video games demands a constant pursuit of visual quality and fidelity. Given the sprawling, intricate worlds now commonplace in modern games, traditional testing methods do not scale at the same rate making it an uphill task to address the myriad of potential visual discrepancies.  Machine Learning (ML) and Computer Vision (CV) methods can supplement these methods to offer scalable solutions. Reference our introduction to visual bugs [Link]({{ site.baseurl }}{% link research/visualbug.md %})
 </div>
 
 ### The Challenge
