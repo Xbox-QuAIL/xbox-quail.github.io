@@ -1,7 +1,7 @@
 ![]({{ site.url }}{{ site.baseurl }}/images/respic/visualbug/banner.png){: style="width: 1000px; height:300px; float: center;"}
 
 ### Visual Bug Detection in Video Games
-##### By Wei Huang | Applied Research Scientist II
+##### By Wei Huang | Applied Research Scientist II & Faliu Yi | Senior Applied Research Scientist 
 
 
 ### Overview
@@ -63,10 +63,10 @@ Generally, there are two types of visual bugs: single-frame bugs and multi-frame
 </p>
 
 
-##### Single-frame bugs
+#### Single-frame bugs
 Single-frames bugs are apparent in individual images, and there is no temporal comtext between the frames before and after. Texture bug,  floating/misplaced objects, and clipping bugs are typical single-frame bugs. 
 
-1. Texture bug
+##### Texture bugs
 
 Texture measures the visual perception of objects’ surface condition in an image, such as coarseness, regularity, roughness, etc. Two common types of object texture bugs are low resolution and stretched. 
 
@@ -80,7 +80,7 @@ Texture measures the visual perception of objects’ surface condition in an ima
    ![stretched]({{ site.url }}{{ site.baseurl }}/images/respic/visualbug/stretched.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
    </p>
 
-2. Floating object
+##### Floating object bugs
 
 Floating object bug is one type of misplacement bug, where the object is supposed to be grounded but it's floating.
 
@@ -88,7 +88,7 @@ Floating object bug is one type of misplacement bug, where the object is suppose
 ![floating]({{ site.url }}{{ site.baseurl }}/images/respic/visualbug/floating.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
 </p>
 
-3. Clipping
+##### Clipping bugs
 
 Clipping/colission bug happens when two objects intersect, either the player/weapon or object are set incorrectly which creates visual aberrations that would not occur in the physical world. 
 <p align="center">
@@ -97,11 +97,11 @@ Clipping/colission bug happens when two objects intersect, either the player/wea
 
 Several research works have been conducted on detecting visual bugs in video games. Rendered texture gliches are detected using deep concolution neural network ([1](https://cdn.aaai.org/ojs/7409/7409-52-10702-1-2-20200921.pdf)). A proof of concept study presents a machine learning approach for automated detection of graphics corruptions in video games ([2](https://arxiv.org/pdf/2011.15103.pdf)). We have one published work which uses deep learning approaches to detect single-frame bugs such as clipping bug detection ([3](https://arxiv.org/abs/2309.11077))
 
-##### Multi-frame bugs
-###### Contributed by Faliu Yi | Senior Applied Research Scientist 
+#### Multi-frame bugs
+
 Multi-frame bugs are not visiable in individual images, but apparent when images are viewed in sequence. Temporal context has to be examined to identify this type of bugs. Typical multi-frame bugs are Level of Details(LOD) Pop, Z-fighting, white box occlusion, etc. 
 
-1. Level of Details(LOD) pop
+##### Loss of Details(LOD) Pop Bugs
 
 <p align="center">
 <video width="600" height="400" controls>
@@ -109,7 +109,7 @@ Multi-frame bugs are not visiable in individual images, but apparent when images
 </video>
 </p>
 
-2. Culling pop
+##### Culling Pop Bugs
 
 <p align="center">
 <video width="600" height="400" controls>
@@ -122,7 +122,7 @@ Multi-frame bugs cannot be visually recognized in individual image because they 
 
 ### Case Study
 
-##### LOD pop detection
+##### LOD Pop Detection
 In this section, we will explore some of the work that has been don to apply ML/DL to automate the detection of LOD pop bug in video game. One example of a LOD pop has been shown previously. An LOD pop bug occurs when the player can observe a sudden appearance, disappearance, or change in resolutin of an in-game object. LOD pops are not only disruptive for the player, but they are also difficult to detect using ML/DL models. The key technical challenges include:
 <ol>
 <li>
