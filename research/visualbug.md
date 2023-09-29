@@ -43,13 +43,12 @@ Class imbalance. On the frame-by-frame basis, bugs are extremely rare. Generally
 </li>
 <li>
 Highly variable distribution. Video games exhibit extreme variability in distribution. Any two games generally have very different visual features, even within same genre. A single game can vary greatly between map, game modes, etc.
+</li>
+</ol>
 
  <p align="center">
     ![intro_challenge]({{ site.url }}{{ site.baseurl }}/images/respic/visualbug/intro_challenge3.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
  </p>
-
-</li>
-</ol>
 
 To address these challenges, we developed a synthetic data generator which allows to easily and quickly get large amounts of labeled datases. These datasets enables us to develop game-specific pre-trained models which are scalable and efficient. 
 
