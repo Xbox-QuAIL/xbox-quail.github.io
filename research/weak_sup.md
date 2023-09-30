@@ -27,7 +27,7 @@ Developing extensive labeled datasets pivotal for the success of deep learning i
 
 <div style="text-align: justify">
 
-Addressing the challenge, in our work we propose the use of unlabeled gameplay along with domain-specific augmentation techniques to generate datasets and self-supervised objectives. These can be used as pre-training or multi-task along with a very small amount of labeled data (order of 10s or 100s of visual bugs) enhancing the performance of the model. Our
+Addressing the challenge, in our work we propose the use of unlabeled gameplay along with domain-specific augmentation techniques to generate datasets and self-supervised objectives. These can be used as pre-training or multi-task along with a very small amount of labeled data (order of 10s or 100s of labeled examples) enhancing the performance of the model. Our
 methodology uses weak-supervision to scale datasets for the crafted objectives and fa-
 cilitates both autonomous and interactive weak-supervision, incorporating unsupervised
 clustering and/or an interactive approach based on text and geometric prompts.
