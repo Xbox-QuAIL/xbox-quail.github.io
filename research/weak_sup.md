@@ -42,8 +42,8 @@ General overview of our method:
  ![]({{ site.url }}{{ site.baseurl }}/images/respic/weak_sup/method1.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
 </p>
 
-- **Segmentation Stage:** Given unlabeled gameplay video, we apply a geometric promptable segmentation model (SAM) to automatically extract masks. \textbf{2. Filtering Stage:} The obtained masks are then filtered either in an unsupervised manner and/or optionally via text-interactive filtering using text-image model (CLIP). \textbf{3. Augmentation Stage:} Labeled \textit{`good'} target instances, and/or unlabeled target instances, are augmented using the filtered masks producing samples used to train a surrogate objective.
-Our method involves a multi-stage approach for processing gameplay videos with the goal of augmenting visual bugs. Below is a concise summary of each stage of the method:
+
+It involves a multi-stage approach for processing gameplay videos with the goal of augmenting visual bugs. Below is a concise summary of each stage of the method:
 
 #### **1. Segmentation Stage:**
 - **Objective:** 
