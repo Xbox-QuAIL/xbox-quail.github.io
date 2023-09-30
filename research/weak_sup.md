@@ -39,7 +39,7 @@ clustering and/or an interactive approach based on text and geometric prompts.
 
 General overview of our method: 
 <p align="center">
- ![]({{ site.url }}{{ site.baseurl }}/images/respic/weak_sup/method1.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
+ ![]({{ site.url }}{{ site.baseurl }}/images/respic/weak_sup/method1.png){: style="width: 800px; float: center;margin-right: 30px; border: 10px"}
 </p>
 
 
@@ -80,14 +80,14 @@ Additional assets added to our GiantMap environment:
 
 <div style="text-align: justify">
 
-The proposed methodology, when applied to detect first-person player clipping/collision bugs in the expansive Giantmap game world, showcased substantial effectiveness, improving over a strong supervised baseline and capturing enough signal to outperform low-labeled supervised settings. 
+The proposed methodology, when applied to detect first-person player clipping/collision bugs in the expansive Giantmap game world, showcased substantial effectiveness, improving over a strong supervised baseline.
 
 <p align="center">
  ![]({{ site.url }}{{ site.baseurl }}/images/respic/weak_sup/mainresult.png){: style="width: 200px; float: center;margin-right: 30px; border: 10px"}
 </p>
 
 
-Our clustering step is able to capture indistribution and out-of-distribution objects from multi-view perspectives:
+Clustering is able to capture indistribution and out-of-distribution objects from multi-view perspectives:
 <p align="center">
  ![]({{ site.url }}{{ site.baseurl }}/images/respic/weak_sup/clustering.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
 </p>
