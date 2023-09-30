@@ -1,7 +1,7 @@
 ![]({{ site.url }}{{ site.baseurl }}/images/respic/weak_sup/c4.jpeg){: style="width: 1000px; height:300px; float: center;"}
 
 ### Weak Supervision for Label Efficient Visual Bug Detection 
-##### [Full Paper](https://arxiv.org/abs/2309.11077)
+##### [Arxiv](https://arxiv.org/abs/2309.11077)
 ##### By Farrukh Rahman | Applied Research Scientist 
 
 
