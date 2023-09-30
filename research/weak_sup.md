@@ -1,4 +1,4 @@
-![]({{ site.url }}{{ site.baseurl }}/images/respic/weak_sup/c4.png){: style="width: 1000px; height:300px; float: center;"}
+![]({{ site.url }}{{ site.baseurl }}/images/respic/weak_sup/c4.jpeg){: style="width: 1000px; height:300px; float: center;"}
 
 ### Weak Supervision for Label Efficient Visual Bug Detection 
 ##### [Full Paper](https://arxiv.org/abs/2309.11077)
@@ -73,7 +73,7 @@ We used the same GiantMap environment as in our work [here]({{ site.baseurl }}{%
 
 Additional assets added to our GiantMap environment:
 <p align="center">
- ![]({{ site.url }}{{ site.baseurl }}/images/respic/weak_sup/Gm50AdditionalObj.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
+ ![]({{ site.url }}{{ site.baseurl }}/images/respic/weak_sup/Gm50AdditionalObj.png){: style="width: 400px; float: center;margin-right: 30px; border: 10px"}
 </p>
 
 ### Results and Applications:
@@ -83,7 +83,7 @@ Additional assets added to our GiantMap environment:
 The proposed methodology, when applied to detect first-person player clipping/collision bugs in the expansive Giantmap game world, showcased substantial effectiveness, improving over a strong supervised baseline and capturing enough signal to outperform low-labeled supervised settings. 
 
 <p align="center">
- ![]({{ site.url }}{{ site.baseurl }}/images/respic/weak_sup/mainresult.png){: style="width: 600px; float: center;margin-right: 30px; border: 10px"}
+ ![]({{ site.url }}{{ site.baseurl }}/images/respic/weak_sup/mainresult.png){: style="width: 200px; float: center;margin-right: 30px; border: 10px"}
 </p>
 
 
