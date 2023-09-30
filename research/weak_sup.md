@@ -68,7 +68,7 @@ It involves a multi-stage approach for processing gameplay videos with the goal 
    For first person player clipping, positives are created by overlaying the source mask *over* the target image's weapon area, while negatives are positioned *behind* the weapon, respecting the target weapon mask. Classifying positives vs negatives serve as our self-supervised objective for FPPC
 
 ### Setting
-We used the same GiantMap environment as in our work [here]({{ site.baseurl }}{% link research/ai_agents_shooter22.md %}) however add 46 additional objects of interest (OOI). Particularly focusing on first-person player clipping (FPPC), where aberrations occur due to incorrectly set collision meshes. We seek to characterize how far in-distribution performance can be advanced with constrained data and assess the model’s efficacy in out-of-distribution (OOD), low-prevalence scenarios.
+We used the same GiantMap environment as in our work [here]({{ site.baseurl }}{% link research/ai_agents_shooter22.md %}) however add 46 additional objects of interest (OOI). Particularly focusing on first-person player clipping (FPPC), where aberrations occur due to incorrectly set collision meshes. We seek to characterize how far performance can be advanced with constrained data and assess the model’s efficacy in out-of-distribution (OOD), low-prevalence scenarios.
 
 
 Additional assets added to our GiantMap environment:
