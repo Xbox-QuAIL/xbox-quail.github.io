@@ -1,13 +1,14 @@
 ![]({{ site.url }}{{ site.baseurl }}/images/respic/weak_sup/c4.png){: style="width: 1000px; height:300px; float: center;"}
 
-### Weak Supervision for Label Efficient Visual Bug Detection
-##### By Farrukh Rahman | Applied Research Scientist
+### Weak Supervision for Label Efficient Visual Bug Detection 
+##### [Full Paper](https://arxiv.org/abs/2309.11077)
+##### By Farrukh Rahman | Applied Research Scientist 
 
 
 ### Introduction
 
 <div style="text-align: justify">
-The ever-evolving realm of video games demands a constant pursuit of visual quality and fidelity. Given the sprawling, intricate worlds now commonplace in modern games, traditional testing methods do not scale at the same rate making it an uphill task to address the myriad of potential visual discrepancies.  Machine Learning (ML) and Computer Vision (CV) methods can supplement these methods to offer scalable solutions. Reference our introduction to visual bugs [here]({{ site.baseurl }}{% link research/visualbug.md %}).
+The ever-evolving realm of video games demands a constant pursuit of visual quality and fidelity. Given the sprawling, intricate worlds now commonplace in modern games, traditional testing methods do not scale at the same rate making it an uphill task to address the myriad of potential visual discrepancies.  Machine Learning (ML) and Computer Vision (CV) methods can supplement these methods to offer scalable solutions. Reference our introduction to visual bugs [here]({{ site.baseurl }}{% link research/visualbug.md %}). 
 </div>
 
 ### The Challenge
