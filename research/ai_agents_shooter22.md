@@ -98,3 +98,18 @@ Our Preference-conditioned Pixel-based Game Testing Agent (PPGTA) extends on the
 
 ### Further Reading
 For further details about our PPGTA agent, please refer to our research ([paper](https://arxiv.org/abs/2308.09289)) that we recently presented at the IEEE Conference on Games (CoG) 2023.
+
+### Cite
+`@article{ppgta_2023,
+  author       = {Sherif Abdelfattah and
+                  Adrian Brown and
+                  Pushi Zhang},
+  title        = {Preference-conditioned Pixel-based {AI} Agent For Game Testing},
+  journal      = {CoRR},
+  volume       = {abs/2308.09289},
+  year         = {2023},
+  url          = {https://doi.org/10.48550/arXiv.2308.09289},
+  doi          = {10.48550/arXiv.2308.09289},
+  eprinttype    = {arXiv},
+  eprint       = {2308.09289}
+}`
