@@ -191,10 +191,10 @@ permalink: /team/
 {% endif %}
 {% endfor %} -->
 
-<!-- --- -->
+<!-- --- 
 
 ## Administrative Support
-Please contact our lab manager, <a href="mailto:XGSQAI@microsoft.com">Adrian Brown</a>.
+Please contact our lab manager, <a href="mailto:XGSQAI@microsoft.com">Adrian Brown</a>.-->
 
 
 
