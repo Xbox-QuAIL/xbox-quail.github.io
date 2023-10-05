@@ -29,7 +29,7 @@ QuAIL utilizes and contributes to methods from relevant state-of-the-art AI and 
 We work closely with numerous collaborators, including engineering and quality assurance teams within Studios Quality, game development teams in XBOX game studios, and researchers from Microsoft research (MSR) Asia.
 
 <figure class="third">
-<a href="hhttps://www.xbox.com/en-US"><img src="{{ site.url }}{{ site.baseurl }}/images/logopic/xbox_logo.png" style="width: 200px"></a> <a href="https://www.xbox.com/en-US/xbox-game-studios"><img src="{{ site.url }}{{ site.baseurl }}/images/logopic/sq_logo.jpg" style="width: 200px"></a>
+<a href="https://www.xbox.com/en-US"><img src="{{ site.url }}{{ site.baseurl }}/images/logopic/xbox_logo.png" style="width: 200px"></a> <a href="https://www.xbox.com/en-US/xbox-game-studios"><img src="{{ site.url }}{{ site.baseurl }}/images/logopic/sq_logo.jpg" style="width: 200px"></a>
 
 <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/"><img src="{{ site.url }}{{ site.baseurl }}/images/logopic/Microsoft_Research_Asia_logo.png" style="width: 200px"></a>
 </figure>

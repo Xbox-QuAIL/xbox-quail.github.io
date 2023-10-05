@@ -3,7 +3,7 @@ layout: member
 title: Adrian Brown
 position: PRINCIPAL DATA SCIENTIST MGR
 handle: adrianbrown
-linkedin: sherif-gad-phd-6563a120/
+linkedin: adrianbrownin/
 photo: adrianbrown.jpg
 ---
 
