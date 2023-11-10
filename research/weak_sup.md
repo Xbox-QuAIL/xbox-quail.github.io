@@ -14,7 +14,7 @@ The ever-evolving realm of video games demands a constant pursuit of visual qual
 ### The Challenge
 
 <div style="text-align: justify">
-Developing extensive labeled datasets pivotal for the success of deep learning is impractical for individual games due to the manual effort involved in capturing and labeling visual bugs at scale. While access to source code and the game engine does provide greater control over data diversity and availability, the evolving nature of games mandates a dynamic set of data for every new asset or environment. Moreover, game developers have narrow windows where content is testable prior to release. These factors make adaptation of our models a critical aspect in the game development cycle. However what is readily and cheaply available are unlabeled playthroughs from humans, or automated methods.
+Developing extensive labeled datasets is pivotal for the success of deep learning is impractical for individual games due to the manual effort involved in capturing and labeling visual bugs at scale. While access to source code and the game engine does provide greater control over data diversity and availability, the evolving nature of games mandates a dynamic set of data for every new asset or environment. Moreover, game developers have narrow windows where content is testable prior to release. These factors make adaptation of our models a critical aspect in the game development cycle. However what is readily and cheaply available are unlabeled playthroughs from humans, or automated methods.
 
 #### Can we, given an unlabeled playthrough video, use that in some manner to accelerate the development of visual bug detection models?
 </div>
